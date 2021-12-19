@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<title>MY PERSONAL WEBSITE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="myself.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+ <a href="#family" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>FAMILY</p>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>GALLERY</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+  <a href="#family" class="w3-bar-item w3-button" style="width:25% !important">FAMILY</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: none;
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 class="glow">I am Nurimanina Batrisyia.</h1>
+    <p>Student in Diploma of Information Management.</p>
+<audio controls autoplay>
+  <source src="It's Time - LSD.ogg" type="audio/ogg">
+  <source src="It's Time - LSD.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+    <video width=="100%" autoplay muted controls>
+
+<source src="video intro.mp4" type="video/mp4">
+
+<source src="video intro.ogg" type="video/ogg">
+
+Your browser does not support the video tag.
+
+</video>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">BIODATA</h2>
+    <hr style="width:200px" class="w3-opacity">
+<button onclick="typeWriter()">CLICK HERE</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Assalamualaikum w.b.t and hello everyone. My name is Nurimanina Batrisyia Binti Nakifla. You can call me Imanina. I was born in Hospital Seberang Jaya, Pulau Pinang and raised in Kuala Bagan Tiang, Perak. I am 20 years old. I believe my fast learning abilities, commitment to succeed. Your entire life can change in an instant. So instead of passively taking what you have for granted, be grateful for it and do whatever good you can with it.';
+var speed = 70;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">SKILLS</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-wide">Active Listening</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div>
+    <p class="w3-wide">Creativity</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Willingness to Learn</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+          <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">EDUCATION</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">SK Sungai Megat Aris</span><br>
+        2008 - 2013
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">SMK Raja Lope Nor Rashid</span><br>
+        2014 - 2018
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">UiTM Sg. Petani, Kedah</span><br>
+        2019 - 2022
+      </div>
+    </div>
+</div>
+    <!-- End About Section -->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #033E3E;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #FFFF00;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #4C787E;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #800000;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>Be who you are and say what you feel, because those who mind don’t matter, and those who matter don’t mind.</q>
+  <p class="author">- Bernard M. Maruch</p>
+</div>
+
+<div class="mySlides">
+  <q>My life motto is 'Do my best, so that I can't blame myself for anything.</q>
+  <p class="author">- Magdalena Neuner</p>
+</div>
+
+<div class="mySlides">
+  <q>Every day, I like to wake up and remind myself to be grateful of the simple things.</q>
+  <p class="author">- Miranda Kerr</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    </div>
+
+  <!-- Family Section -->
+      <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="family">
+    <h2 class="w3-text-light-grey">FAMILY</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>“Family is not an important thing. It’s everything.” –Michael J. Fox</p>
+<br>
+<table border="5" cellspacing="8" cellpading="4"
+align="center">
+<tr>
+<td witdh="50%" colspan="3"><image src="myfamilygiphy.gif"</td>
+</tr>
+<tr>
+<th rowspan="5" bgcolor="pink" align="center">MY FAMILY</th>
+<th bgcolor="lightcoral" align="center">NAME</th>
+<th bgcolor="soft purple" align="center">RELATIONSHIP</th>
+</tr>
+<tr>
+<td>Nakifla Bin Othman</td>
+<td>Father</td>
+</tr>
+<tr>
+<td>Jamaliah Binti Nordin</td>
+<td>Mother</td>
+</tr>
+<tr>
+<td>Zamzai Bulba Hariah Binti Nurudin</td>
+<td>Step Mother</td>
+</tr>
+<tr>
+<td>Nurirdina Batrisyia Binti Nakifla </td>
+<td>Twin Sisters</td>
+<tr>
+<th rowspan="5" bgcolor="GOLD" align="center">MY SIBLINGS</th>
+<th bgcolor="SKYBLUE" align="center">NAME</th>
+<th bgcolor="LIGHTGREY" align="center">RELATIONSHIP</th>
+</tr>
+<tr>
+<td>Mohd Nur Jaimi Bin Nakifla</td>
+<td>Oldest Brother</td>
+</tr>
+<tr>
+<td>Mohd Nur Jasni Bin Nakifla</td>
+<td>Second Brother</td>
+</tr>
+<tr>
+<td>Mohd Ridzuan Bin Nakifla</td>
+<td>Third Brother</td>
+</tr>
+<tr>
+<td>Robbiatul Addawiyyah Binti Nakifla</td>
+<td>Younger Sister</td>
+</tr>
+</table>
+    </div>
+  </div>
+   <!-- End Family Section -->
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+
+    <!-- Grid for photos -->
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">MY CATS [Zoom in for better view]</h2>
+
+<div class="w3-row-padding">
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">Comot/Mot</div>
+  <img src="MOT 2.jpg" alt="Comot/Mot" style="width:70%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">Topui</div>
+  <img src="topui.jpg" alt="topui" style="width:70%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">Oyen</div>
+  <img src="oyen.jpg" alt="oyen" style="width:70%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">Mochi</div>
+  <img src="mochi.jpg" alt="mochi" style="width:70%">
+</div>
+</div>
+
+ <div class="w3-col l3 m6 w3-margin-bottom">
+     <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Puteh</div>
+ <img src="putih.jpg" alt="putih" style="width:69%">
+</div>
+ </div>
+      </div>
+    <!-- End photo grid -->
+
+    <!-- Grid for photos -->
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">MY FAMILY</h2>
+
+<div class="w3-row-padding">
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">Father</div>
+  <img src="nakifla.jpg" alt="abah" style="width:70%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">Mother</div>
+  <img src="mk eda.jpg" alt="topui" style="width:70%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">Say Cheese</div>
+  <img src="together.jpg" alt="oyen" style="width:70%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">Third Brother</div>
+  <img src="ridzuan.jpg" alt="mochi" style="width:70%">
+</div>
+</div>
+
+ <div class="w3-col l3 m6 w3-margin-bottom">
+     <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Sisters</div>
+ <img src="kakak.jpg" alt="putih" style="width:70%">
+</div>
+ </div>
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">Younger Sister</div>
+  <img src="robbiatul.jpg" alt="aton" style="width:70%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">Candid</div>
+  <img src="robbicandid.jpg" alt="House" style="width:70%">
+</div>
+</div>
+      </div>
+    <!-- End photo grid -->
+
+    <!-- Grid for photos -->
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">AROUND MY HOUSE</h2>
+
+<div class="w3-row-padding">
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">1</div>
+  <img src="rmhhalaman1.jpg" alt="halaman" style="width:70%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">2</div>
+  <img src="rumahhalaman1.jpg" alt="topui" style="width:70%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">3</div>
+  <img src="rumahhalaman11.jpg" alt="oyen" style="width:70%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">4</div>
+  <img src="rumahhalaman22.jpg" alt="mochi" style="width:70%">
+</div>
+ </div>
+      </div>
+    <!-- End photo grid -->
+
+    <!-- Grid for photos -->
+<h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">MY SCHOOL/UNIVERSITY</h2>
+
+<div class="w3-row-padding">
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">SKSMA</div>
+  <img src="megat aris.jpg" alt="SK Megat Aris" style="width:80%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">SMKRLNR</div>
+  <img src="rajalope.jpg" alt="SMK RAJA LOPE NOR RASHID" style="width:80%">
+</div>
+</div>
+
+<div class="w3-col l3 m6 w3-margin-bottom">
+<div class="w3-display-container">
+  <div class="w3-display-topleft w3-black w3-padding">UiTM KEDAH</div>
+  <img src="uitmkedah.jpg" alt="UiTM KEDAH" style="width:80%">
+</div>
+</div>
+      </div>
+    <!-- End photo grid -->
+  <!-- End Portfolio Section -->
+  </div>
+<!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">CONTACT</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Parit Buntar, PERAK.</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +60 142314580
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: nurimanina397@gmail.com</p>
+    </div><br>
+    <p>Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">© 2021 All Rights Reserved</p> <html lang="en">
+  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, 
+        initial-scale=1.0" />
+  
+    <title>Digital Clock</title>
+  
+    <style>
+        #clock {
+            font-size: 20px;
+            width: 150px;
+            margin: 20px;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+  
+<body>
+    <div id="clock">8:10:45</div>
+  
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+  
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+  
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+  
+            let currentTime = hour + ":" 
+                + min + ":" + sec + am_pm;
+  
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+  
+        showTime();
+    </script>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
